@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from database import engine, SessionLocal
-from models import Base, SerieEconomica
-from scraper import get_riesgo_pais
+from .database import engine, SessionLocal
+from .models import Base, SerieEconomica
+from .scraper import get_riesgo_pais
 import datetime
 
 Base.metadata.create_all(bind=engine)
